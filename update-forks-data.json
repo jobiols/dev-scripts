@@ -20,6 +20,16 @@
     },
     {
       "usr": "ingadhoc",
+      "repo": "adhoc-stock",
+      "upstream": "stock",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
       "repo": "adhoc-odoo-support",
       "upstream": "odoo-support",
       "branch": [
