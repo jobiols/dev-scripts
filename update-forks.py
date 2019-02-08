@@ -25,7 +25,9 @@ import sys
 from datetime import datetime
 import json
 import subprocess
+from repos_lib import sc_, msgrun, msginf, msgerr, msgdone, NOW, get_repos_data
 
+"""
 RED = "\033[1;31m"
 GREEN = "\033[1;32m"
 YELLOW = "\033[1;33m"
@@ -87,6 +89,8 @@ def msginf(msg):
 with open('update-forks-data.json') as f:
     json = json.load(f)
 repos = json['repos']
+
+"""
 
 
 class repo:
@@ -205,13 +209,13 @@ class repo:
             msgerr('push fail')
 
 
-class repos:
+class Repos:
     """ Conjunto de repositorios definido en el archivo de configuracion
     """
 
     def __init__(self, json):
         self._repos = []
-        for dict in json['repos']:
+        for dict in json:
             if not self.alredy_exists(dict):
                 self._repos.append(repo(dict))
 
@@ -254,8 +258,7 @@ class repos:
             r.update(branch)
 
 
-rp = repos(json)
-
+rp = Repos(get_repos_data())
 
 # argparse options
 ###############################################################################
