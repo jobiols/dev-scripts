@@ -159,8 +159,6 @@ class repo:
         return NOW.strftime(':%B %d, %Y')
 
     def update(self, branch):
-        msgrun(
-            'update --- {} {} {}'.format(self._usr, self._repo, self._branch))
         # remove not wanted branches, if there is a -b directive
         if branch:
             if branch[0] not in self.branch():
@@ -175,6 +173,10 @@ class repo:
         # chequear local repo y crearlo si no existe
         if sc_('git -C {} status'.format(self.dir())):
             self.create_local_repo()
+
+        # hacer checkout de cada branch (no se porque pero si no, no anda)
+        for branch in self.branch():
+            sc_('git -C {} checkout {}'.format(self.dir(), branch))
 
         # traer todos los branches del upstream
         msgrun('Fetching all branches from upstream')
@@ -253,6 +255,7 @@ class repos:
 
 
 rp = repos(json)
+
 
 # argparse options
 ###############################################################################
