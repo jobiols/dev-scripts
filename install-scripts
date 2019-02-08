@@ -1,0 +1,34 @@
+#!/bin/bash
+###########################################################
+#set -x
+readonly RED="\e[31m"
+readonly YELLOW="\e[33m"
+readonly GREEN="\e[32m"
+readonly STD="\e[0m"
+
+function msginfo {
+    echo -e "${STD}$1"
+}
+function msgrun {
+    echo -e "${YELLOW}$1...${STD}"
+}
+function msgdone {
+    echo -e "${GREEN}$1${STD}"
+}
+function msgerror {
+    echo -e "${RED}ERROR: $1${STD}"
+}
+###########################################################
+
+msgrun "-----------------------------------------"
+git checkout master
+git status
+
+msgrun "Pulling scripts"
+git pull
+msgrun "Installing scripts"
+sudo cp sd.py /usr/bin/sd
+sudo cp odooenv.py /usr/bin
+sudo cp -r classes/ /usr/bin
+sudo cp set_perms.py /usr/bin
+msgdone "Scripts installed"

@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# generador de diagrama ER para base de datos Odoo 
+#
+
+cd 
+cd java
+java -jar schemaSpy.jar -t pgsql -host localhost -db valente_prod -u odoo -p odoo -dp postgresql.jar -o output/ -s public -i \
+"(account_invoice)|\
+(account_journal)|\
+(account_journal_afip_document_class)|\
+(account_journal_cashbox_line)|\
+(account_journal_period)|\
+(account_move)|\
+(account_move_line)|\
+(account_move_reconcile)|\
+(account_vat_ledger_journal_rel)|\
+(account_account)"

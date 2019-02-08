@@ -1,0 +1,73 @@
+# NGINX configuration for Production Server PS01
+##
+
+ssl_certificate         /etc/nginx/ssl/nginx.crt;
+ssl_certificate_key     /etc/nginx/ssl/nginx.key;
+
+server {
+        listen 80;
+        rewrite  ^(.*)$ https://$host$1 last;
+}
+
+server {
+        listen 443;
+        ssl on;
+
+	server_name             str.sytes.net;
+        ssl_session_cache   shared:SSL:10m;
+        ssl_session_timeout 10m;
+
+        keepalive_timeout   70;
+
+        location / {
+                proxy_pass         http://127.0.0.1:8070/;
+                proxy_redirect     http://127.0.0.1:8070/ https://$host;
+
+                proxy_set_header        X-Real-IP $remote_addr;
+                proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header        X-Forwarded-Host $host;
+                proxy_set_header        X-Forwarded-Port $server_port;
+        }
+}
+
+server {
+        listen 443;
+        ssl on;
+
+        server_name          kikai.sytes.net;
+        ssl_session_cache    shared:SSL:10m;
+        ssl_session_timeout  10m;
+
+        keepalive_timeout    70;
+
+        location / {
+                proxy_pass         http://127.0.0.1:8069/;
+                proxy_redirect     http://127.0.0.1:8069/ https://$host;
+
+                proxy_set_header        X-Real-IP $remote_addr;
+                proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header        X-Forwarded-Host $host;
+                proxy_set_header        X-Forwarded-Port $server_port;
+        }
+}
+
+server {
+        listen 443;
+        ssl on;
+
+        server_name          adriana.sytes.net;
+        ssl_session_cache    shared:SSL:10m;
+        ssl_session_timeout  10m;
+
+        keepalive_timeout    70;
+
+        location / {
+                proxy_pass         http://127.0.0.1:8068/;
+                proxy_redirect     http://127.0.0.1:8068/ https://$host;
+
+                proxy_set_header        X-Real-IP $remote_addr;
+                proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header        X-Forwarded-Host $host;
+                proxy_set_header        X-Forwarded-Port $server_port;
+        }
+}

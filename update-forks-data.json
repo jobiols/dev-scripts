@@ -1,0 +1,177 @@
+{
+  "repos": [
+    {
+      "usr": "rafi16jan",
+      "repo": "rafi16jan-backend-theme",
+      "upstream": "backend-theme",
+      "branch": [
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-product",
+      "upstream": "product",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-odoo-support",
+      "upstream": "odoo-support",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-odoo-argentina",
+      "upstream": "odoo-argentina",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-argentina-sale",
+      "upstream": "argentina-sale",
+      "branch": [
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-account-financial-tools",
+      "upstream": "account-financial-tools",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-account-payment",
+      "upstream": "account-payment",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-miscellaneous",
+      "upstream": "miscellaneous",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-argentina-reporting",
+      "upstream": "argentina-reporting",
+      "branch": [
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-reporting-engine",
+      "upstream": "reporting-engine",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-aeroo_reports",
+      "upstream": "aeroo_reports",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "oca",
+      "repo": "oca-social",
+      "upstream": "social",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0",
+        "12.0"
+      ]
+    },
+    {
+      "usr": "oca",
+      "repo": "oca-partner-contact",
+      "upstream": "partner-contact",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0",
+        "12.0"
+      ]
+    },
+    {
+      "usr": "oca",
+      "repo": "oca-web",
+      "upstream": "web",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0",
+        "12.0"
+      ]
+    },
+    {
+      "usr": "oca",
+      "repo": "oca-server-tools",
+      "upstream": "server-tools",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0",
+        "12.0"
+      ]
+    },
+    {
+      "usr": "oca",
+      "repo": "oca-server-brand",
+      "upstream": "server-brand",
+      "branch": [
+        "11.0",
+        "12.0"
+      ]
+    },
+    {
+      "usr": "tgalal",
+      "repo": "yowsup",
+      "branch": [
+        "master"
+      ]
+    },
+    {
+      "usr": "paxapos",
+      "repo": "fiscalberry",
+      "branch": [
+        "master"
+      ]
+    }
+  ]
+}
