@@ -1,6 +1,17 @@
 {
   "repos": [
     {
+      "usr": "it-projects-llc",
+      "repo": "it-projects-llc-mail-addons",
+      "upstream": "mail-addons",
+      "branch": [
+        "9.0",
+        "10.0",
+        "11.0",
+        "12.0"
+      ]
+    },
+    {
       "usr": "rafi16jan",
       "repo": "rafi16jan-backend-theme",
       "upstream": "backend-theme",
@@ -12,6 +23,16 @@
       "usr": "ingadhoc",
       "repo": "adhoc-product",
       "upstream": "product",
+      "branch": [
+        "8.0",
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
+      "repo": "adhoc-website",
+      "upstream": "website",
       "branch": [
         "8.0",
         "9.0",

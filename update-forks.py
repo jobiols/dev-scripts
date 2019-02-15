@@ -25,7 +25,7 @@ import sys
 from datetime import datetime
 import json
 import subprocess
-from repos_lib import sc_, msgrun, msginf, msgerr, msgdone, NOW, get_repos_data
+from repos_lib import sc_, msgrun, msginf, msgerr, msgdone, NOW, get_repos_data, REPOS_DIR
 
 """
 RED = "\033[1;31m"
@@ -137,7 +137,7 @@ class repo:
         return ret
 
     def name(self):
-        return '{:12} {:17} {}'.format(
+        return '{:15} {:18} {}'.format(
             self._usr,
             self.format_branches(self._branch),
             self._repo)
