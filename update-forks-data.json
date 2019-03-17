@@ -24,7 +24,6 @@
       "repo": "adhoc-product",
       "upstream": "product",
       "branch": [
-        "8.0",
         "9.0",
         "11.0"
       ]
@@ -34,7 +33,6 @@
       "repo": "adhoc-website",
       "upstream": "website",
       "branch": [
-        "8.0",
         "9.0",
         "11.0"
       ]
@@ -44,7 +42,6 @@
       "repo": "adhoc-stock",
       "upstream": "stock",
       "branch": [
-        "8.0",
         "9.0",
         "11.0"
       ]
@@ -54,7 +51,6 @@
       "repo": "adhoc-odoo-support",
       "upstream": "odoo-support",
       "branch": [
-        "8.0",
         "9.0",
         "11.0"
       ]
@@ -64,7 +60,6 @@
       "repo": "adhoc-odoo-argentina",
       "upstream": "odoo-argentina",
       "branch": [
-        "8.0",
         "9.0",
         "11.0"
       ]
@@ -83,7 +78,6 @@
       "repo": "adhoc-account-financial-tools",
       "upstream": "account-financial-tools",
       "branch": [
-        "8.0",
         "9.0",
         "11.0"
       ]
@@ -93,7 +87,6 @@
       "repo": "adhoc-account-payment",
       "upstream": "account-payment",
       "branch": [
-        "8.0",
         "9.0",
         "11.0"
       ]
@@ -103,7 +96,6 @@
       "repo": "adhoc-miscellaneous",
       "upstream": "miscellaneous",
       "branch": [
-        "8.0",
         "9.0",
         "11.0"
       ]
@@ -122,7 +114,6 @@
       "repo": "adhoc-reporting-engine",
       "upstream": "reporting-engine",
       "branch": [
-        "8.0",
         "9.0",
         "11.0"
       ]
@@ -132,7 +123,6 @@
       "repo": "adhoc-aeroo_reports",
       "upstream": "aeroo_reports",
       "branch": [
-        "8.0",
         "9.0",
         "11.0"
       ]
@@ -142,7 +132,6 @@
       "repo": "oca-social",
       "upstream": "social",
       "branch": [
-        "8.0",
         "9.0",
         "11.0",
         "12.0"
@@ -153,7 +142,6 @@
       "repo": "oca-partner-contact",
       "upstream": "partner-contact",
       "branch": [
-        "8.0",
         "9.0",
         "11.0",
         "12.0"
@@ -164,7 +152,6 @@
       "repo": "oca-web",
       "upstream": "web",
       "branch": [
-        "8.0",
         "9.0",
         "11.0",
         "12.0"
@@ -175,7 +162,6 @@
       "repo": "oca-server-tools",
       "upstream": "server-tools",
       "branch": [
-        "8.0",
         "9.0",
         "11.0",
         "12.0"
