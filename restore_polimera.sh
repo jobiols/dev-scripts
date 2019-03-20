@@ -4,7 +4,7 @@
 sudo rm -r /odoo_ar/odoo-11.0e/polimera/backup_dir/*
 
 # traerse los backups
-scp ubuntu@polimera:/odoo_ar/odoo-11.0e/polimera/backup_dir/2019_03_1* /odoo_ar/odoo-11.0e/polimera/backup_dir/
+scp ubuntu@polimera:/odoo_ar/odoo-11.0e/polimera/backup_dir/2019_03_20* /odoo_ar/odoo-11.0e/polimera/backup_dir/
 
 # restorear el backup mas nuevo
 sudo docker run --rm -i \
