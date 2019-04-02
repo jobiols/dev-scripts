@@ -4,7 +4,7 @@
 sudo rm -r /odoo_ar/odoo-11.0e/digital/backup_dir/*
 
 # traerse los backups
-scp argentina@digital:/odoo_ar/odoo-11.0e/digital/backup_dir/2019_03_1* /odoo_ar/odoo-11.0e/digital/backup_dir/
+scp argentina@digital:/odoo_ar/odoo-11.0e/digital/backup_dir/2019_04_* /odoo_ar/odoo-11.0e/digital/backup_dir/
 
 # restorear el backup mas nuevo
 sudo docker run --rm -i \
