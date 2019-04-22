@@ -7,7 +7,22 @@
 client=$1
 version=$2
 
-server="ubuntu@"$client
+# determinar el username depende del vps donde lo pusimos.
+username="ubuntu"
+if [ $client == 'digital' ] 
+then
+    username="argentina"
+fi
+if [ $client == 'ntsw' ]
+then
+   username="jorge_obiols"
+fi
+if [ $client == 'narove' ]
+then
+   username='narove'
+fi
+
+server=$username"@"$client
 dir="/odoo_ar/odoo-"$version/$client
 bkp=$dir"/backup_dir"
 
