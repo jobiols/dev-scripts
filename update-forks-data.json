@@ -52,7 +52,8 @@
       "upstream": "odoo-support",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -61,7 +62,8 @@
       "upstream": "odoo-argentina",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -79,7 +81,8 @@
       "upstream": "account-financial-tools",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -88,7 +91,8 @@
       "upstream": "account-payment",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -97,7 +101,8 @@
       "upstream": "miscellaneous",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
