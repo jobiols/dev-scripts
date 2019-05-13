@@ -38,7 +38,7 @@ scp $server:$bkp/$(ssh $server "ls -t $bkp/ | head -1") $bkp/
 sudo docker run --rm -i \
     --link "pg-"$client":db" \
     -v $bkp/:/backup \
-    -v $dir/filestore:/filestore \
+    -v $dir/data_dir/filestore:/filestore \
     --env NEW_DBNAME=$client"_prod" \
     --env DEACTIVATE=True \
     jobiols/dbtools
