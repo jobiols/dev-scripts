@@ -58,6 +58,15 @@
     },
     {
       "usr": "ingadhoc",
+      "repo": "adhoc-partner",
+      "upstream": "partner",
+      "branch": [
+        "9.0",
+        "11.0"
+      ]
+    },
+    {
+      "usr": "ingadhoc",
       "repo": "adhoc-odoo-support",
       "upstream": "odoo-support",
       "branch": [
