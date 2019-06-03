@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 oca-gen-addon-readme \
-    --org-name=NTSystemWork \
-    --repo-name=rest_helpdesk_api \
-    --branch=11.0 \
-    --addon-dir=/odoo_ar/odoo-11.0e/click/sources/rest-api/rest_lead_api/ \
+    --org-name=jeosoft \
+    --repo-name=stock_no_extra_move \
+    --branch=9.0 \
+    --addon-dir=/odoo_ar/odoo-9.0/iomaq/sources/cl-iomaq/ \
     --gen-html
