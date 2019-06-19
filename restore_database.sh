@@ -21,6 +21,14 @@ if [ $client == 'narove' ]
 then
    username='narove'
 fi
+if [ $client == 'geminis' ]
+then
+   username='jorge_obiols'
+fi
+if [ $client == 'mobeats' ]
+then
+   username='dev'
+fi
 
 server=$username"@"$client
 dir="/odoo_ar/odoo-"$version/$client

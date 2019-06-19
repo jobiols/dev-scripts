@@ -23,11 +23,12 @@ import subprocess
 import sys, os
 
 if __name__ == '__main__':
-    repo = sys.argv[1]
+    repo = sys.argv[1].rstrip('/')
 
-    if repo[-1] == '/':
-        print 'quitar la barra del directorio'
-        exit()
+    # aplicar al directorio principal
+    print 'setting permission 755 {}'.format(repo)
+    params = 'sudo chmod 755 {}'.format(repo)
+    subprocess.call(params, shell=True)
 
     for root, dirs, files in os.walk(repo):
         if '.idea' in root or '.git' in root or 'dev-scripts' in root:
