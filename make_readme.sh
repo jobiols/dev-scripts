@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# uso make_readme module client version repo
+# uso make_readme version client 
 # 
-# make_readme.sh sale_order_validity_fix iomaq 9.0 cl-iomaq
+# make_readme.sh 11.0 digital
 
 oca-gen-addon-readme \
-    --org-name=jeosoft \
-    --repo-name=$1 \
-    --branch=11.0 \
-    --addon-dir=/odoo_ar/odoo-$3/$2/sources/$4/$1 \
-    --gen-html
+	--org-name jobiols \
+	--repo-name odoo-addons \
+	--branch 11.0 \
+	--addons-dir /odoo_ar/odoo-11.0e/digital/sources/odoo-addons \
+	--gen-html
 

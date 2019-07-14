@@ -29,6 +29,10 @@ if [ $client == 'mobeats' ]
 then
    username='dev'
 fi
+if [ $client == 'sams' ]
+then
+   username='odoo11'
+fi
 
 server=$username"@"$client
 dir="/odoo_ar/odoo-"$version/$client
