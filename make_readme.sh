@@ -7,6 +7,6 @@ oca-gen-addon-readme \
 	--org-name jobiols \
 	--repo-name odoo-addons \
 	--branch 11.0 \
-	--addons-dir /odoo_ar/odoo-11.0e/digital/sources/odoo-addons \
+	--addons-dir /odoo_ar/odoo-11.0/vhing/sources/odoo-addons \
 	--gen-html
 
