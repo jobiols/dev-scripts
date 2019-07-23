@@ -223,6 +223,15 @@
       "branch": [
         "master"
       ]
+    },
+    {
+      "usr": "regaby",
+      "repo": "odoo-addons-1",
+      "upstream": "server-brand",
+      "branch": [
+        "11.0"
+      ]
     }
+
   ]
 }
