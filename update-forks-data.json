@@ -25,7 +25,8 @@
       "upstream": "product",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -34,7 +35,8 @@
       "upstream": "website",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -43,7 +45,8 @@
       "upstream": "stock",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -62,7 +65,8 @@
       "upstream": "partner",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -91,7 +95,8 @@
       "upstream": "argentina-sale",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -130,7 +135,8 @@
       "upstream": "argentina-reporting",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -139,7 +145,8 @@
       "upstream": "reporting-engine",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -148,7 +155,8 @@
       "upstream": "aeroo_reports",
       "branch": [
         "9.0",
-        "11.0"
+        "11.0",
+        "12.0"
       ]
     },
     {
@@ -226,8 +234,8 @@
     },
     {
       "usr": "regaby",
-      "repo": "odoo-addons-1",
-      "upstream": "server-brand",
+      "repo": "regaby-odoo-addons",
+      "upstream": "odoo-addons",
       "branch": [
         "11.0"
       ]
