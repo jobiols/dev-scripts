@@ -33,6 +33,10 @@ if [ $client == 'sams' ]
 then
    username='odoo11'
 fi
+if [ $client == 'abogados' ]
+then
+   username='jorge_obiols'
+fi
 
 server=$username"@"$client
 dir="/odoo_ar/odoo-"$version/$client
