@@ -9,6 +9,10 @@ version=$2
 
 # determinar el username depende del vps donde lo pusimos.
 username="ubuntu"
+if [ $client == 'piscinas' -o $client == "cbseguros" ]; then
+   username="jorge_obiols"
+fi
+
 if [ $client == 'digital' ] 
 then
     username="argentina"

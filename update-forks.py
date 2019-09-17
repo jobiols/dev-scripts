@@ -290,12 +290,13 @@ def update_all(branch):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="""
     update-forks v 1.2.0 ------------------------------------------------------
-    This script manages a set of repositories, each one having three locations: The
-    original one, the fork of the original in my github and a clone of this fork in my
-    workstation.
-    The program's goal is to update the fork in github to the latest version of the
-    original repo. To do that it makes a fetch to the original repo downloading the
-    last version to the workstation, does a merge and then performs a push to the fork.
+    This script manages a set of repositories, each one having three locations:
+    The original one, the fork of the original in my github and a clone of this
+    fork in my workstation.
+    The program's goal is to update the fork in github to the latest version of
+    the original repo. To do that it makes a fetch to the original repo
+    downloading the last version to the workstation, does a merge and then
+    performs a push to the fork.
     """)
     parser.add_argument('-U',
                         '--update-all',
@@ -305,7 +306,8 @@ if __name__ == '__main__':
     parser.add_argument('-u',
                         '--update',
                         action='store_true',
-                        help="Update specifics fork, requires -r use -b to specify branch")
+                        help="Update specifics fork, requires -r use -b to "
+                             "specify branch")
 
     parser.add_argument('-r',
                         '--repo',
@@ -316,12 +318,14 @@ if __name__ == '__main__':
     parser.add_argument('-d',
                         '--delete',
                         action='store_true',
-                        help="Delete specific repo, This is usefull to start fresh. Requires -r")
+                        help="Delete specific repo, This is usefull to start "
+                             "fresh. Requires -r")
 
     parser.add_argument('-D',
                         '--delete-all',
                         action='store_true',
-                        help="Delete all repos, This is usefull to start fresh.")
+                        help="Delete all repos, This is usefull to start "
+                             "fresh.")
 
     parser.add_argument('-b',
                         '--branch',

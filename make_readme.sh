@@ -5,8 +5,8 @@
 
 oca-gen-addon-readme \
 	--org-name jobiols \
-	--repo-name odoo-addons \
+	--repo-name cl-amic \
 	--branch 11.0 \
-	--addons-dir /odoo_ar/odoo-11.0/amic/sources/odoo-addons \
+	--addons-dir /odoo_ar/odoo-11.0/amic/sources/cl-amic \
 	--gen-html
 
