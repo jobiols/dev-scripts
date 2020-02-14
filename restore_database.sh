@@ -9,7 +9,7 @@ version=$2
 
 # determinar el username depende del vps donde lo pusimos.
 username="ubuntu"
-if [ $client == 'piscinas' -o $client == "cbseguros" ]; then
+if [ $client == 'piscinas' -o $client == "cbseguros" -o $client == "botella" ]; then
    username="jorge_obiols"
 fi
 
@@ -17,7 +17,7 @@ if [ $client == 'digital' ]
 then
     username="argentina"
 fi
-if [ $client == 'ntsw' ]
+if [ $client == 'ntsw' -o $client == "placas" ]
 then
    username="jorge_obiols"
 fi
@@ -33,9 +33,9 @@ if [ $client == 'mobeats' ]
 then
    username='dev'
 fi
-if [ $client == 'sams' ]
+if [ $client == 'samse' ]
 then
-   username='odoo11'
+   username='odooee'
 fi
 if [ $client == 'abogados' ]
 then

@@ -16,6 +16,6 @@ sd pull dpage/pgadmin4
 sd run -p 80:80 \
 	-e "PGADMIN_DEFAULT_EMAIL=odoo" \
 	-e "PGADMIN_DEFAULT_PASSWORD=odoo" \
-	--link pg-ntsw:db \
+	--link pg-digital:db \
 	--name pgadmin4 \
 	-d dpage/pgadmin4
