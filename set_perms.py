@@ -26,7 +26,7 @@ if __name__ == '__main__':
     repo = sys.argv[1].rstrip('/')
 
     # aplicar al directorio principal
-    print 'setting permission 755 {}'.format(repo)
+    print('setting permission 755 {}'.format(repo))
     params = 'sudo chmod 755 {}'.format(repo)
     subprocess.call(params, shell=True)
 
@@ -36,12 +36,12 @@ if __name__ == '__main__':
         for dir in dirs:
             if '.idea' in dir or '.git' in dir:
                 continue
-            print 'setting permission 755 {}/{}'.format(root, dir)
+            print('setting permission 755 {}/{}'.format(root, dir))
             params = 'sudo chmod 755 {}/{}'.format(root, dir)
             subprocess.call(params, shell=True)
         for file in files:
             if 'pyc' in file:
                 continue
-            print 'setting permission 644 {}/{}'.format(root, file)
+            print('setting permission 644 {}/{}'.format(root, file))
             params = 'sudo chmod 644 {}/{}'.format(root, file)
             subprocess.call(params, shell=True)
