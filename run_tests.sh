@@ -20,10 +20,11 @@ sudo docker run --rm -it \
     -e WDB_SOCKET_SERVER=wdb \
     --link pg-tatakua:db \
     jobiols/odoo-ent:13.0e.debug -- \
-    --stop-after-init -d tatakua_test \
-        -i  l10n_py,l10n_py_invoice_document,partner_ruc_unique,l10n_py_reports \
+        -i  l10n_py \
+   --stop-after-init -d tatakua_test \
         --test-enable
 
-# no instalados
-#l10n_py_check_printing,
-#l10n_py_vat_book
+
+
+
+#        -i  l10n_py,l10n_py_invoice_document,partner_ruc_unique,l10n_py_reports,l10n_py_vat_book \

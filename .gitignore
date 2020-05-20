@@ -12,6 +12,8 @@ __pycache__/
 # C extensions
 *.so
 
+sh_datos
+
 # Distribution / packaging
 .Python
 env/
