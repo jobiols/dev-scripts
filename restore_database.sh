@@ -33,16 +33,34 @@ if [ $client == 'mobeats' ]
 then
    username='dev'
 fi
-if [ $client == 'samse' ]
+if [ $client == 'sams13e' ]
 then
-   username='odooee'
+   username='sams'
 fi
 if [ $client == 'abogados' ]
 then
    username='jorge_obiols'
 fi
 
+if [ $client == 'epso' ]
+then
+   username='sams'
+fi
+
+if [ $client == 'ingeleco' ]
+then
+       username='sams'
+fi
+
+if [ $client == 'makeover' ]
+then
+   username='root'
+fi
+
 server=$username"@"$client
+
+echo server
+
 dir="/odoo_ar/odoo-"$version/$client
 bkp=$dir"/backup_dir"
 
