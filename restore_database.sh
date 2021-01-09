@@ -56,7 +56,10 @@ if [ $client == 'makeover' ]
 then
    username='root'
 fi
-
+if [ $client == 'caepso' ]
+then
+  username='sams'
+fi
 server=$username"@"$client
 
 echo server
