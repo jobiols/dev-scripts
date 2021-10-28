@@ -2,67 +2,14 @@
 #######################################################################
 # Restore newest backup from production to local deactivating database.
 # parameters: client version
-# por ejemplo ./restore_database.sh polimera 11.0e
+# por ejemplo ./restore_database.sh polimera 11.0
 
 client=$1
 version=$2
-
-# determinar el username depende del vps donde lo pusimos.
-username="ubuntu"
-if [ $client == 'piscinas' -o $client == "cbseguros" -o $client == "botella" ]; then
-   username="jorge_obiols"
-fi
-
-if [ $client == 'digital' ] 
-then
-    username="argentina"
-fi
-if [ $client == 'ntsw' -o $client == "placas" ]
-then
-   username="jorge_obiols"
-fi
-if [ $client == 'narove' ]
-then
-   username='narove'
-fi
-if [ $client == 'geminis' ]
-then
-   username='jorge_obiols'
-fi
-if [ $client == 'mobeats' ]
-then
-   username='dev'
-fi
-if [ $client == 'sams13e' ]
-then
-   username='sams'
-fi
-if [ $client == 'abogados' ]
-then
-   username='jorge_obiols'
-fi
-
-if [ $client == 'epso' ]
-then
-   username='sams'
-fi
-
-if [ $client == 'ingeleco' ]
-then
-       username='sams'
-fi
-
-if [ $client == 'makeover' ]
-then
-   username='root'
-fi
-if [ $client == 'caepso' ]
-then
-  username='sams'
-fi
+username=$3
 server=$username"@"$client
 
-echo server
+echo $server
 
 dir="/odoo_ar/odoo-"$version/$client
 bkp=$dir"/backup_dir"
@@ -86,4 +33,4 @@ sudo docker run --rm -i \
     -v $dir/data_dir/filestore:/filestore \
     --env NEW_DBNAME=$client"_prod" \
     --env DEACTIVATE=True \
-    jobiols/dbtools
+    jobiols/dbtools:1.1.0
